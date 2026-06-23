@@ -330,4 +330,5 @@ else:
         Select a movie above and hit <strong>Find Similar Movies</strong>
     </div>
     """, unsafe_allow_html=True)
+python -c "import requests; r = requests.get('https://api.themoviedb.org/3/movie/19995?api_key=46641e0b65de6f89911eb679745ea2d9'); print(r.status_code, r.json().get('poster_path'))"
 
